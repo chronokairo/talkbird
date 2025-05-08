@@ -1,98 +1,158 @@
-
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f8f9fa;
-    color: #333;
-  }
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #263238;
+}
 
-  header {
-    background: #007bff;
-    color: white;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
+header {
+  background: #1976d2;
+  /* Material Blue 700 */
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: #ff9800;
+  /* Material Orange 500 */
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ffa726;
+  /* Material Orange 400 */
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #1976d2, #ff9800);
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.idiomas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.08);
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-top: 4px solid #ff9800;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(255, 152, 0, 0.18);
+}
+
+.chat {
+  background: #e3f2fd;
+  /* Material Blue 50 */
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.chat h3 {
+  margin-bottom: 20px;
+}
+
+.chat button {
+  background: #ff9800;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.chat button:hover {
+  background: #fb8c00;
+  /* Material Orange 600 */
+}
+
+footer {
+  background: #263238;
+  /* Material Blue Grey 900 */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #ff9800;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #ffa726;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .idiomas {
+    flex-direction: column;
     align-items: center;
   }
 
-  header h1 {
-    margin: 0;
+  .card {
+    width: 90%;
+    max-width: 350px;
   }
 
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 1.5em;
   }
 
   .hero {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(to right, #007bff, #00c6ff);
-    color: white;
-  }
-
-  .hero h2 {
-    font-size: 2.5em;
-  }
-
-  .hero p {
-    font-size: 1.2em;
-    margin-top: 10px;
-  }
-
-  .idiomas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 40px 20px;
-  }
-
-  .card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 10px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.2s;
-  }
-
-  .card:hover {
-    transform: translateY(-5px);
+    padding: 30px 10px;
   }
 
   .chat {
-    background: #f1f1f1;
-    text-align: center;
-    padding: 40px 20px;
+    padding: 20px 10px;
   }
 
-  .chat h3 {
-    margin-bottom: 20px;
+  header {
+    padding: 15px 10px;
   }
-
-  .chat button {
-    background: #28a745;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-  }
-
-  footer {
-    background: #343a40;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-
-  footer a {
-    color: #ccc;
-    margin: 0 10px;
-    text-decoration: none;
-  }
+}
