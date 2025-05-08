@@ -6,8 +6,8 @@ body {
 }
 
 header {
-  background: #1976d2;
-  /* Material Blue 700 */
+  background: #ff9800;
+  /* Material Orange 500 */
   color: white;
   padding: 20px 40px;
   display: flex;
