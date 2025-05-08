@@ -1,56 +1,225 @@
+index.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LinguaConecta - Aprenda Idiomas com Professores Reais</title>
+  <title>LinguaConecta - Aprenda um Novo Idioma</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
-  <header>
-    <h1>LinguaConecta</h1>
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">Idiomas</a>
-      <a href="#">Professores</a>
-      <a href="#">Contato</a>
+  <header class="topbar">
+    <div class="logo"><i class="fas fa-comment-dots"></i> LinguaConecta</div>
+    <nav class="menu">
+      <a href="#"><i class="fas fa-user"></i> Para Indivíduos</a>
+      <a href="#"><i class="fas fa-building"></i> Para Empresas</a>
+      <a href="#"><i class="fas fa-school"></i> Para Escolas</a>
     </nav>
+    <div class="user-actions">
+      <a href="#"><i class="fas fa-sign-in-alt"></i> Entrar</a>
+      <button><i class="fas fa-play"></i> INICIAR SESSÃO</button>
+    </div>
   </header>
 
   <section class="hero">
-    <h2>Conecte-se com professores reais e aprenda idiomas ao vivo</h2>
-    <p>Pratique com nativos, melhore sua conversação e domine um novo idioma!</p>
+    <div class="hero-text">
+      <h1 id="typing-heading">Os grandes experts em ensino de idiomas</h1>
+      <p>Há quase 30 anos, conectamos estudantes a professores reais para desenvolver fluência e confiança ao aprender
+        novos idiomas.</p>
+      <div class="cta">
+        <button class="start-btn"><i class="fas fa-rocket"></i> Comece a aprender</button>
+        <select>
+          <option>Todos os 25 idiomas</option>
+          <option>Inglês</option>
+          <option>Espanhol</option>
+          <option>Francês</option>
+          <option>Alemão</option>
+        </select>
+        <button class="enter-btn"><i class="fas fa-sign-in-alt"></i> ENTRAR</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://i.imgur.com/oKZb3vV.png" alt="Ilustrações de idiomas" />
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Por que escolher o LinguaConecta?</h2>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <i class="fas fa-users"></i>
+        <h3>Professores Nativos</h3>
+        <p>Aprenda com falantes nativos e especialistas qualificados.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-laptop"></i>
+        <h3>Aulas Online</h3>
+        <p>Estude de qualquer lugar com nossa plataforma interativa.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-certificate"></i>
+        <h3>Certificações</h3>
+        <p>Obtenha certificados reconhecidos internacionalmente.</p>
+      </div>
+    </div>
   </section>
 
   <section class="idiomas">
-    <div class="card">
-      <h3>Inglês</h3>
-      <p>Aulas com professores certificados e nativos.</p>
+    <h2>Idiomas Disponíveis</h2>
+    <div class="cards-container">
+      <div class="card">
+        <img src="https://i.imgur.com/WhdJAFu.png" alt="Inglês">
+        <h3>Inglês</h3>
+        <p>O idioma global para negócios, academia e viagens.</p>
+        <button class="card-btn">Começar</button>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/TDRdS0W.png" alt="Espanhol">
+        <h3>Espanhol</h3>
+        <p>A segunda língua mais falada do mundo.</p>
+        <button class="card-btn">Começar</button>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/tiEv9D2.png" alt="Francês">
+        <h3>Francês</h3>
+        <p>O idioma da diplomacia, culinária e arte.</p>
+        <button class="card-btn">Começar</button>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/JPiTvnd.png" alt="Alemão">
+        <h3>Alemão</h3>
+        <p>Uma língua importante para negócios e tecnologia.</p>
+        <button class="card-btn">Começar</button>
+      </div>
     </div>
-    <div class="card">
-      <h3>Espanhol</h3>
-      <p>Pratique com falantes da América Latina e Espanha.</p>
+  </section>
+
+  <section class="testimonials">
+    <h2>O que nossos alunos dizem</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial">
+        <div class="quote"><i class="fas fa-quote-left"></i></div>
+        <p>Após 6 meses, consegui meu primeiro emprego internacional graças à fluência que adquiri.</p>
+        <div class="author">
+          <img src="https://i.imgur.com/nEdFGOW.jpg" alt="Ana L.">
+          <div>
+            <h4>Ana L.</h4>
+            <span>Estudante de Inglês</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="quote"><i class="fas fa-quote-left"></i></div>
+        <p>Os professores são excelentes e a metodologia realmente funciona para conversação.</p>
+        <div class="author">
+          <img src="https://i.imgur.com/kVqiBfd.jpg" alt="Carlos R.">
+          <div>
+            <h4>Carlos R.</h4>
+            <span>Estudante de Espanhol</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <h3>Francês</h3>
-      <p>Aprenda a língua do amor com fluência e naturalidade.</p>
-    </div>
-    <div class="card">
-      <h3>Alemão</h3>
-      <p>Domine o idioma da engenharia e inovação.</p>
+  </section>
+
+  <section class="pricing">
+    <h2>Nossos Planos</h2>
+    <div class="price-cards">
+      <div class="price-card">
+        <div class="price-header">
+          <h3>Básico</h3>
+          <div class="price">R$ 99<span>/mês</span></div>
+        </div>
+        <ul>
+          <li><i class="fas fa-check"></i> 2 aulas por semana</li>
+          <li><i class="fas fa-check"></i> Material didático</li>
+          <li><i class="fas fa-check"></i> Suporte por email</li>
+        </ul>
+        <button class="price-btn">Escolher plano</button>
+      </div>
+      <div class="price-card popular">
+        <div class="popular-tag">Mais Popular</div>
+        <div class="price-header">
+          <h3>Premium</h3>
+          <div class="price">R$ 199<span>/mês</span></div>
+        </div>
+        <ul>
+          <li><i class="fas fa-check"></i> 5 aulas por semana</li>
+          <li><i class="fas fa-check"></i> Material didático completo</li>
+          <li><i class="fas fa-check"></i> Aulas em grupo e particulares</li>
+          <li><i class="fas fa-check"></i> Suporte 24/7</li>
+        </ul>
+        <button class="price-btn">Escolher plano</button>
+      </div>
+      <div class="price-card">
+        <div class="price-header">
+          <h3>Business</h3>
+          <div class="price">R$ 349<span>/mês</span></div>
+        </div>
+        <ul>
+          <li><i class="fas fa-check"></i> Aulas ilimitadas</li>
+          <li><i class="fas fa-check"></i> Conteúdo personalizado</li>
+          <li><i class="fas fa-check"></i> Certificado internacional</li>
+          <li><i class="fas fa-check"></i> Suporte VIP</li>
+        </ul>
+        <button class="price-btn">Escolher plano</button>
+      </div>
     </div>
   </section>
 
   <section class="chat">
-    <h3>Entre no chat ao vivo agora mesmo</h3>
-    <p>Fale com um professor ou pratique com outros alunos.</p>
-    <button onclick="alert('Função de chat em desenvolvimento!')">Iniciar Chat</button>
+    <h3>Experimente uma aula grátis agora!</h3>
+    <p>Converse com um professor por 30 minutos e descubra como podemos ajudar.</p>
+    <button><i class="fas fa-comments"></i> Iniciar Chat com Professor</button>
   </section>
 
   <footer>
-    <p>&copy; 2025 LinguaConecta. Todos os direitos reservados.</p>
-    <a href="#">Política de Privacidade</a> |
-    <a href="#">Termos de Uso</a>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4><i class="fas fa-comment-dots"></i> LinguaConecta</h4>
+        <p>Conectando pessoas através do aprendizado de idiomas desde 1994.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Cursos</a></li>
+          <li><a href="#">Professores</a></li>
+          <li><a href="#">Preços</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contato</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i> (11) 5555-9999</li>
+          <li><i class="fas fa-envelope"></i> contato@linguaconecta.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Newsletter</h4>
+        <p>Receba dicas e novidades sobre aprendizado de idiomas.</p>
+        <form class="newsletter">
+          <input type="email" placeholder="Seu e-mail">
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2025 LinguaConecta. Todos os direitos reservados.</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
