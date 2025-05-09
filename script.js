@@ -56,7 +56,7 @@ const TBAnimation = {
         });
     },
 
-    // Bounce animation
+    // animação de balanço
     bounce: (selector, intensity = '20px', duration = 500, times = 3) => {
         const elements = TBAnimation.getElements(selector);
         elements.forEach(el => {
@@ -96,7 +96,7 @@ const TBAnimation = {
         });
     },
 
-    // Type writing effect
+    // Efeito de digitação
     typeText: (selector, text, speed = 50) => {
         const element = document.querySelector(selector);
         if (!element) return;
