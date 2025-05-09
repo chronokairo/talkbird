@@ -233,4 +233,21 @@ document.addEventListener('DOMContentLoaded', () => {
             loginModal.classList.add("hidden");
         }
     });
+
+    // Adicione este código ao final da função DOMContentLoaded
+    // Mostrar/esconder senha
+    const togglePassword = document.querySelector('.toggle-password');
+    const passwordField = document.getElementById('senha');
+
+    if (togglePassword && passwordField) {
+        togglePassword.addEventListener('click', () => {
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+
+            // Mudar ícone
+            const icon = togglePassword.querySelector('i');
+            icon.classList.toggle('fa-eye');
+            icon.classList.toggle('fa-eye-slash');
+        });
+    }
 });
