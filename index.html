@@ -18,7 +18,7 @@
       <a href="#"><i class="fas fa-school"></i> Para Escolas</a>
     </nav>
     <div class="user-actions">
-      <a href="#"><i class="fas fa-sign-in-alt"></i> Entrar</a>
+      <a href="#" id="openModal"><i class="fas fa-sign-in-alt"></i> Entrar</a>
       <button><i class="fas fa-play"></i> INICIAR SESSÃO</button>
     </div>
   </header>
@@ -37,7 +37,7 @@
           <option>Francês</option>
           <option>Alemão</option>
         </select>
-        <button class="enter-btn"><i class="fas fa-sign-in-alt"></i> ENTRAR</button>
+        <a href="#" id="openModal"><i class="fas fa-sign-in-alt"></i> Entrar</a>
       </div>
     </div>
     <div class="hero-image">
@@ -217,6 +217,39 @@
       <p>Copyright &copy; 2025 LinguaConecta. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <!-- Modal de Login -->
+  <div id="loginModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-[#FFFAFA] text-[#FF8C00] rounded-2xl shadow-xl max-w-md w-full p-8 relative">
+      <!-- Botão para fechar o modal -->
+      <button id="closeModal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-800">
+        <i class="fas fa-times"></i>
+      </button>
+      <h2 class="text-3xl font-bold mb-2">Já estuda com a gente?</h2>
+      <p class="mb-6 text-sm text-black text-center">Faça seu login e boa aula!</p>
+      <form class="space-y-4">
+        <div>
+          <label for="email" class="block text-sm font-semibold">E-mail</label>
+          <input type="email" id="email" class="w-full p-3 rounded-lg mt-1 bg-[#FFFAFA] border border-[#000080] focus:outline-none focus:ring-2 focus:ring-[#000080]" placeholder="Seu e-mail" required />
+        </div>
+        <div>
+          <label for="senha" class="block text-sm font-semibold">Senha</label>
+          <div class="relative">
+            <input type="password" id="senha" class="w-full p-3 rounded-lg mt-1 bg-[#FFFAFA] border border-[#000080] focus:outline-none focus:ring-2 focus:ring-[#000080]" placeholder="Sua senha" required />
+            <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 cursor-pointer">👁️</span>
+          </div>
+        </div>
+        <button class="w-full bg-[#191970] text-[#FFFAFA] font-bold py-2 rounded-lg hover:bg-green-400 transition-transform transform hover:scale-105">
+          ENTRAR
+        </button>
+        <button class="w-full border border-pink-400 text-white font-bold py-2 rounded-lg hover:bg-pink-600 transition-transform transform hover:scale-105" style="background-color: #FF8C00; color: #FFFAFA;">
+          ENTRAR COM GOOGLE
+          <img src="google.png" alt="logo Google" class="w-4 h-4 inline-block ml-2" />
+        </button>
+        <div class="text-sm text-center text-blue-300 underline mt-2 cursor-pointer">Primeiro acesso / Esqueci minha senha</div>
+      </form>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

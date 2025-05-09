@@ -752,3 +752,11 @@ footer {
     gap: 30px;
   }
 }
+
+.hidden {
+  display: none;
+}
+
+#loginModal {
+  display: flex;
+}

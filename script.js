@@ -211,4 +211,26 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.observe(el);
         });
     });
+
+    const loginModal = document.getElementById("loginModal");
+    const openModalBtn = document.getElementById("openModal");
+    const closeModalBtn = document.getElementById("closeModal");
+
+    // Abrir o modal
+    openModalBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        loginModal.classList.remove("hidden");
+    });
+
+    // Fechar o modal
+    closeModalBtn.addEventListener("click", () => {
+        loginModal.classList.add("hidden");
+    });
+
+    // Fechar o modal ao clicar fora dele
+    loginModal.addEventListener("click", (e) => {
+        if (e.target === loginModal) {
+            loginModal.classList.add("hidden");
+        }
+    });
 });
