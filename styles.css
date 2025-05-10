@@ -828,29 +828,16 @@ footer {
 }
 
 .form-group {
-  margin-bottom: 20px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 8px;
-  color: #455a64;
-  font-weight: 500;
+  margin-bottom: 20px; /* Espaçamento consistente entre os campos */
 }
 
 .form-control {
-  width: 100%;
-  padding: 12px 15px;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
-  font-size: 1em;
-  transition: all 0.3s;
-}
-
-.form-control:focus {
-  border-color: #1976d2;
-  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
-  outline: none;
+  width: 100%; /* Garante que os inputs ocupem toda a largura disponível */
+  padding: 12px 15px; /* Padding interno consistente */
+  border: 1px solid #e0e0e0; /* Borda consistente */
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 1em; /* Tamanho de fonte consistente */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
 }
 
 .password-field {
