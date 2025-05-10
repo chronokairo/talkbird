@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #e3f2fd;
+  background: #191970;
   /* Azul Material 50 */
   color: #263238;
   line-height: 1.6;
@@ -13,7 +13,7 @@ body {
 /* Header e Topbar */
 header,
 .topbar {
-  background: #1976d2;
+  background: #191970;
   /* Azul Material 700 */
   color: #fff;
   display: flex;
@@ -118,7 +118,7 @@ nav a:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, #1976d2 60%, #e3f2fd 100%);
+  background: linear-gradient(90deg, #1976d2 60%, #191970 100%);
   color: #fff;
   padding: 60px 16px;
   position: relative;
@@ -185,7 +185,7 @@ nav a:hover {
 .enter-btn,
 .card-btn,
 .price-btn {
-  background: #1976d2;
+  background: #191970;
   /* Azul Material 700 */
   color: #fff;
   border: none;
@@ -203,7 +203,7 @@ nav a:hover {
 .enter-btn:hover,
 .card-btn:hover,
 .price-btn:hover {
-  background: #1565c0;
+  background: #191970;
   /* Azul Material 800 */
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(21, 101, 192, 0.3);
@@ -269,7 +269,7 @@ nav a:hover {
 
 /* Cards de idiomas */
 .idiomas {
-  background: #e3f2fd;
+  background: #191970;
   padding: 60px 20px;
   text-align: center;
 }
@@ -404,13 +404,13 @@ nav a:hover {
 
 /* Pricing */
 .pricing {
-  background: #e3f2fd;
+  background: #191970;
   padding: 60px 20px;
   text-align: center;
 }
 
 .pricing h2 {
-  color: #1976d2;
+  color: #191970;
   margin-bottom: 40px;
   font-size: 2em;
 }
@@ -508,7 +508,7 @@ nav a:hover {
 
 /* Chat */
 .chat {
-  background: #bbdefb;
+  background: #FF8C00;
   /* Azul Material 100 */
   text-align: center;
   padding: 60px 20px;
@@ -528,7 +528,7 @@ nav a:hover {
 }
 
 .chat button {
-  background: #1976d2;
+  background: #191970;
   color: white;
   padding: 15px 30px;
   border: none;
