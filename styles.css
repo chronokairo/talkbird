@@ -277,12 +277,28 @@ nav a:hover {
   background: var(--background-blue);
   padding: 60px 20px;
   text-align: center;
+  position: relative;
+}
+
+.idiomas:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 80%;
+  background: url('https://images.freeimages.com/images/premium/previews/2188/21882555-corporate-people-chatting.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.7; /* Adiciona transparência à imagem */
+  border-bottom-right-radius: 1000px; /* Arredonda apenas a borda inferior direita */
 }
 
 .idiomas h2 {
   color: var(--text-light);
   margin-bottom: 30px;
   font-size: 2em;
+  position: relative;
+  z-index: 1;
 }
 
 .cards-container {
