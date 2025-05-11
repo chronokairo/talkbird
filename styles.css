@@ -445,7 +445,7 @@ nav a:hover {
 }
 
 .pricing h2 {
-  color: var(--background-blue);
+  color: #FF8C00;
   margin-bottom: 40px;
   font-size: 2em;
 }
