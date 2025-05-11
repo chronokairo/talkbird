@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página do Aluno - TalkBird</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body class="pagina-do-aluno">
+  <!-- Header -->
+  <header class="topbar">
+    <div class="logo">
+      <i class="fas fa-comment-dots"></i> TalkBird
+    </div>
+    <nav class="menu">
+      <a href="#"><i class="fas fa-user"></i> Para Indivíduos</a>
+      <a href="#"><i class="fas fa-building"></i> Para Empresas</a>
+      <a href="#"><i class="fas fa-school"></i> Para Escolas</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Search Bar -->
+    <section class="search-bar">
+      <input type="text" class="form-control" placeholder="Pesquise por salas, professores ou materiais..." />
+      <button class="btn-primary"><i class="fas fa-search"></i></button>
+    </section>
+
+    <!-- Ads Section -->
+    <section class="ads">
+      <h2 class="section-title">Anúncios</h2>
+      <div class="ad-banner">
+        <img src="https://via.placeholder.com/728x90" alt="Anúncio">
+      </div>
+    </section>
+
+    <!-- Tabs Navigation -->
+    <section class="tabs">
+      <nav class="tabs-nav">
+        <button class="tab-btn active" data-tab="chat">
+          <i class="fas fa-comments"></i> Chat
+        </button>
+        <button class="tab-btn" data-tab="materiais">
+          <i class="fas fa-book"></i> Materiais
+        </button>
+        <button class="tab-btn" data-tab="professores">
+          <i class="fas fa-chalkboard-teacher"></i> Professores
+        </button>
+      </nav>
+    </section>
+
+    <!-- Tabs Content -->
+    <div class="tab-content">
+      <div id="chat" class="tab-pane active">
+        <h3>Chat em Grupo</h3>
+        <div class="chat-container">
+          <div class="messages"></div>
+          <div class="chat-input">
+            <input type="text" placeholder="Digite sua mensagem...">
+            <button class="btn-send"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="materiais" class="tab-pane">
+        <h3>Materiais Disponíveis</h3>
+        <div class="materials-grid">
+          <!-- Material cards will be added here -->
+        </div>
+      </div>
+
+      <div id="professores" class="tab-pane">
+        <h3>Professores Online</h3>
+        <div class="teachers-grid">
+          <!-- Teacher cards will be added here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Rooms Preview -->
+    <section class="salas-preview">
+      <h2 class="section-title">Salas Disponíveis</h2>
+      <div class="filters">
+        <label for="filter-language">Filtrar por Idioma:</label>
+        <select id="filter-language" class="form-control">
+          <option value="all">Todos</option>
+          <option value="ingles">Inglês</option>
+          <option value="espanhol">Espanhol</option>
+          <option value="frances">Francês</option>
+        </select>
+      </div>
+      <div class="salas-container">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Sala 1">
+          <h3>Sala de Conversação - Inglês</h3>
+          <p>Pratique conversação com falantes nativos.</p>
+          <button class="card-btn">Entrar</button>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Sala 2">
+          <h3>Sala de Gramática - Espanhol</h3>
+          <p>Aprenda as regras gramaticais do espanhol.</p>
+          <button class="card-btn">Entrar</button>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Sala 3">
+          <h3>Sala de Cultura - Francês</h3>
+          <p>Explore a cultura francesa enquanto aprende o idioma.</p>
+          <button class="card-btn">Entrar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <!-- About Section -->
+      <div class="footer-section">
+        <h4><i class="fas fa-info-circle"></i> Sobre Nós</h4>
+        <p>TalkBird é a plataforma ideal para aprender idiomas de forma prática e interativa.</p>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="footer-section">
+        <h4><i class="fas fa-link"></i> Links Úteis</h4>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Recursos</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-section">
+        <h4><i class="fas fa-envelope"></i> Newsletter</h4>
+        <p>Inscreva-se para receber novidades.</p>
+        <div class="newsletter">
+          <input type="email" class="form-control" placeholder="Seu e-mail">
+          <button class="btn-primary">Inscrever-se</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 TalkBird. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

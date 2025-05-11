@@ -1,0 +1,338 @@
+/* ==========================
+   Variáveis Globais
+========================== */
+:root {
+  --primary-blue: #1976d2;
+  --primary-blue-dark: #1565c0;
+  --secondary-orange: #ff9800;
+  --secondary-orange-dark: #fb8c00;
+  --background-blue: #191970;
+  --text-dark: #263238;
+  --text-light: #fff;
+  --grey-light: #b0bec5;
+  --grey-dark: #546e7a;
+  --shadow-blue: rgba(25, 118, 210, 0.3);
+  --shadow-orange: rgba(255, 152, 0, 0.3);
+}
+
+/* ==========================
+   Estilos Globais
+========================== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background-blue);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* ==========================
+   Header
+========================== */
+header {
+  background: var(--background-blue);
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Centralizar o menu apenas na página do aluno */
+body.pagina-do-aluno .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+body.pagina-do-aluno header.topbar {
+  justify-content: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.7em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo i {
+  color: var(--secondary-orange);
+}
+
+/* ==========================
+   Menu de Navegação
+========================== */
+.menu a,
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: 500;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.menu a:hover,
+nav a:hover {
+  color: var(--secondary-orange);
+  transform: translateY(-2px);
+}
+
+/* ==========================
+   Botões
+========================== */
+button,
+.btn-primary,
+.btn-secondary {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background: var(--primary-blue);
+  color: var(--text-light);
+}
+
+.btn-primary:hover {
+  background: var(--primary-blue-dark);
+  box-shadow: 0 4px 12px var(--shadow-blue);
+}
+
+.btn-secondary {
+  background: var(--secondary-orange);
+  color: var(--text-light);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-orange-dark);
+  box-shadow: 0 4px 12px var(--shadow-orange);
+}
+
+/* ==========================
+   Seções Principais
+========================== */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  background: var(--text-light);
+  border-bottom: 1px solid var(--grey-light);
+}
+
+.ads {
+  padding: 20px;
+  text-align: center;
+  background: var(--text-light);
+}
+
+.ads .ad-banner img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================
+   Tabs Navigation
+========================== */
+.tabs-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  background: var(--background-blue);
+  border-bottom: 2px solid var(--grey-light);
+}
+
+.tab-btn {
+  background: var(--primary-blue);
+  color: var(--text-light);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: var(--secondary-orange);
+  transform: translateY(-2px);
+}
+
+.tab-btn.active {
+  background: var(--secondary-orange);
+  border-bottom: 3px solid var(--text-light);
+}
+
+/* Tab Content Styles */
+.tab-content {
+  padding: 20px;
+  background: var(--text-light);
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Chat Styles */
+.chat-container {
+  height: 400px;
+  border: 1px solid var(--grey-light);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid var(--grey-light);
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid var(--grey-light);
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.btn-send {
+  background: var(--primary-blue);
+  color: var(--text-light);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Materials and Teachers Grid */
+.materials-grid,
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Responsividade para abas */
+@media (max-width: 600px) {
+  .tabs-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ==========================
+   Footer
+========================== */
+footer {
+  background: #263238;
+  color: var(--text-light);
+  padding: 60px 20px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h4 {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: var(--grey-light);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: var(--secondary-orange);
+}
+
+/* ==========================
+   Responsividade
+========================== */
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .menu a {
+    margin: 8px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
