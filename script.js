@@ -292,4 +292,13 @@ document.addEventListener('DOMContentLoaded', () => {
             planModal.classList.add("hidden");
         }
     });
+
+    // Looping video background
+    const video = document.querySelector('.video-bg');
+    if (video) {
+        video.addEventListener('ended', () => {
+            video.currentTime = 0; // Reinicia o vídeo
+            video.play(); // Reproduz novamente
+        });
+    }
 });
