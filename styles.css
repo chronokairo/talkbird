@@ -260,7 +260,7 @@ nav a:hover {
 }
 
 .feature-card {
-  background: #f5f7fa;
+  background: #191970; /* Alterado para a cor desejada */
   border-radius: 8px;
   padding: 30px;
   width: 280px;
@@ -281,8 +281,12 @@ nav a:hover {
 }
 
 .feature-card h3 {
-  color: #191970, /* Alterado para a cor desejada */
+  color: #FFFAFA; /* Alterado para a cor desejada */
   margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: #FFFAFA; /* Alterado para a cor desejada */
 }
 
 /* Cards de idiomas */
