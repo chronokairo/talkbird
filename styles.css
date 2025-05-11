@@ -1,21 +1,33 @@
+:root {
+  --primary-blue: #1976d2;
+  --primary-blue-dark: #1565c0;
+  --secondary-orange: #ff9800;
+  --secondary-orange-dark: #fb8c00;
+  --background-blue: #191970;
+  --text-dark: #263238;
+  --text-light: #fff;
+  --grey-light: #b0bec5;
+  --grey-dark: #546e7a;
+  --shadow-blue: rgba(25, 118, 210, 0.3);
+  --shadow-orange: rgba(255, 152, 0, 0.3);
+}
+
 /* Paleta principal: Azul (primário), Laranja (secundário) */
 
 /* Fundo geral e texto */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #191970;
-  /* Azul Material 50 */
-  color: #263238;
+  background: var(--background-blue);
+  color: var(--text-dark);
   line-height: 1.6;
 }
 
 /* Header e Topbar */
 header,
 .topbar {
-  background: #191970;
-  /* Azul Material 700 */
-  color: #fff;
+  background: var(--background-blue);
+  color: var(--text-light);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,14 +50,13 @@ header,
 }
 
 .logo i {
-  color: #ff9800;
-  /* Laranja Material 500 */
+  color: var(--secondary-orange);
 }
 
 /* Menu de navegação */
 .menu a,
 nav a {
-  color: #fff;
+  color: var(--text-light);
   text-decoration: none;
   margin: 0 18px;
   font-weight: 500;
@@ -62,8 +73,7 @@ nav a i {
 
 .menu a:hover,
 nav a:hover {
-  color: #ff9800;
-  /* Laranja Material 500 */
+  color: var(--secondary-orange);
   transform: translateY(-2px);
 }
 
@@ -75,7 +85,7 @@ nav a:hover {
 }
 
 .user-actions a {
-  color: #fff;
+  color: var(--text-light);
   text-decoration: none;
   font-weight: 500;
   margin-right: 8px;
@@ -86,14 +96,13 @@ nav a:hover {
 }
 
 .user-actions a:hover {
-  color: #ff9800;
+  color: var(--secondary-orange);
   transform: translateY(-2px);
 }
 
 .user-actions button {
-  background: #ff9800;
-  /* Laranja Material 500 */
-  color: #fff;
+  background: var(--secondary-orange);
+  color: var(--text-light);
   border: none;
   border-radius: 4px;
   padding: 10px 18px;
@@ -106,10 +115,9 @@ nav a:hover {
 }
 
 .user-actions button:hover {
-  background: #fb8c00;
-  /* Laranja Material 600 */
+  background: var(--secondary-orange-dark);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+  box-shadow: 0 4px 12px var(--shadow-orange);
 }
 
 /* Hero Section */
@@ -118,8 +126,8 @@ nav a:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, #1976d2 60%, #191970 100%);
-  color: #fff;
+  background: linear-gradient(90deg, var(--primary-blue) 60%, var(--background-blue) 100%);
+  color: var(--text-light);
   padding: 60px 16px;
   position: relative;
   overflow: hidden;
@@ -142,7 +150,6 @@ nav a:hover {
   max-width: 500px;
   margin-right: 32px;
   position: relative;
-  /* For the animations */
 }
 
 .hero h1 {
@@ -164,7 +171,7 @@ nav a:hover {
   max-width: 320px;
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(25, 118, 210, 0.25);
+  box-shadow: 0 8px 30px var(--shadow-blue);
   transition: all 0.3s ease;
 }
 
@@ -185,9 +192,8 @@ nav a:hover {
 .enter-btn,
 .card-btn,
 .price-btn {
-  background: #191970;
-  /* Azul Material 700 */
-  color: #fff;
+  background: var(--background-blue);
+  color: var(--text-light);
   border: none;
   border-radius: 4px;
   padding: 12px 24px;
@@ -203,10 +209,9 @@ nav a:hover {
 .enter-btn:hover,
 .card-btn:hover,
 .price-btn:hover {
-  background: #191970;
-  /* Azul Material 800 */
+  background: var(--background-blue);
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(21, 101, 192, 0.3);
+  box-shadow: 0 6px 15px var(--shadow-blue);
 }
 
 .cta select {
@@ -215,8 +220,8 @@ nav a:hover {
   padding: 12px 16px;
   font-size: 1em;
   outline: none;
-  background: #fff;
-  color: #263238;
+  background: var(--text-light);
+  color: var(--text-dark);
   cursor: pointer;
 }
 
@@ -224,11 +229,11 @@ nav a:hover {
 .features {
   padding: 60px 20px;
   text-align: center;
-  background: #fff;
+  background: var(--text-light);
 }
 
 .features h2 {
-  color: #1976d2;
+  color: var(--primary-blue);
   margin-bottom: 30px;
   font-size: 2em;
 }
@@ -258,24 +263,24 @@ nav a:hover {
 
 .feature-card i {
   font-size: 2.5em;
-  color: #1976d2;
+  color: var(--primary-blue);
   margin-bottom: 20px;
 }
 
 .feature-card h3 {
-  color: #263238;
+  color: var(--text-dark);
   margin-bottom: 15px;
 }
 
 /* Cards de idiomas */
 .idiomas {
-  background: #191970;
+  background: var(--background-blue);
   padding: 60px 20px;
   text-align: center;
 }
 
 .idiomas h2 {
-  color: #FFFAFA;
+  color: var(--text-light);
   margin-bottom: 30px;
   font-size: 2em;
 }
@@ -288,15 +293,14 @@ nav a:hover {
 }
 
 .card {
-  background: #fff;
+  background: var(--text-light);
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(33, 150, 243, 0.1);
   padding: 25px;
   width: 250px;
   text-align: center;
   transition: all 0.3s ease;
-  border-top: 4px solid #1976d2;
-  /* Azul */
+  border-top: 4px solid var(--primary-blue);
 }
 
 .card:hover {
@@ -314,36 +318,34 @@ nav a:hover {
 }
 
 .card h3 {
-  color: #1976d2;
+  color: var(--primary-blue);
   margin-bottom: 10px;
 }
 
 .card p {
   margin-bottom: 20px;
-  color: #546e7a;
+  color: var(--grey-dark);
 }
 
 .card-btn {
   width: 100%;
   justify-content: center;
-  background: #ff9800;
-  /* Laranja Material 500 */
+  background: var(--secondary-orange);
 }
 
 .card-btn:hover {
-  background: #fb8c00;
-  /* Laranja Material 600 */
+  background: var(--secondary-orange-dark);
 }
 
 /* Testimonials */
 .testimonials {
   padding: 60px 20px;
-  background: #fff;
+  background: var(--text-light);
   text-align: center;
 }
 
 .testimonials h2 {
-  color: #1976d2;
+  color: var(--primary-blue);
   margin-bottom: 40px;
   font-size: 2em;
 }
@@ -394,7 +396,7 @@ nav a:hover {
 
 .author h4 {
   margin: 0;
-  color: #1976d2;
+  color: var(--primary-blue);
 }
 
 .author span {
@@ -404,13 +406,13 @@ nav a:hover {
 
 /* Pricing */
 .pricing {
-  background: #191970;
+  background: var(--background-blue);
   padding: 60px 20px;
   text-align: center;
 }
 
 .pricing h2 {
-  color: #191970;
+  color: var(--background-blue);
   margin-bottom: 40px;
   font-size: 2em;
 }
@@ -423,7 +425,7 @@ nav a:hover {
 }
 
 .price-card {
-  background: #fff;
+  background: var(--text-light);
   border-radius: 12px;
   padding: 40px 30px;
   width: 280px;
@@ -439,7 +441,7 @@ nav a:hover {
 }
 
 .popular {
-  border: 2px solid #ff9800;
+  border: 2px solid var(--secondary-orange);
   transform: scale(1.05);
 }
 
@@ -448,8 +450,8 @@ nav a:hover {
 }
 
 .popular-tag {
-  background: #ff9800;
-  color: #fff;
+  background: var(--secondary-orange);
+  color: var(--text-light);
   font-weight: bold;
   padding: 5px 15px;
   position: absolute;
@@ -465,7 +467,7 @@ nav a:hover {
 }
 
 .price-header h3 {
-  color: #1976d2;
+  color: var(--primary-blue);
   margin-bottom: 15px;
   font-size: 1.5em;
 }
@@ -473,7 +475,7 @@ nav a:hover {
 .price {
   font-size: 2.5em;
   font-weight: bold;
-  color: #263238;
+  color: var(--text-dark);
 }
 
 .price span {
@@ -498,7 +500,7 @@ nav a:hover {
 }
 
 .price-card li i {
-  color: #1976d2;
+  color: var(--primary-blue);
 }
 
 .price-btn {
@@ -509,7 +511,6 @@ nav a:hover {
 /* Chat */
 .chat {
   background: #FF8C00;
-  /* Azul Material 100 */
   text-align: center;
   padding: 60px 20px;
 }
@@ -517,7 +518,7 @@ nav a:hover {
 .chat h3 {
   margin-bottom: 15px;
   font-size: 2em;
-  color: #1976d2;
+  color: var(--primary-blue);
 }
 
 .chat p {
@@ -528,8 +529,8 @@ nav a:hover {
 }
 
 .chat button {
-  background: #191970;
-  color: white;
+  background: var(--background-blue);
+  color: var(--text-light);
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
@@ -543,16 +544,15 @@ nav a:hover {
 }
 
 .chat button:hover {
-  background: #1565c0;
+  background: var(--primary-blue-dark);
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(21, 101, 192, 0.3);
+  box-shadow: 0 6px 15px var(--shadow-blue);
 }
 
 /* Footer */
 footer {
   background: #263238;
-  /* Azul Material Blue Grey 900 */
-  color: white;
+  color: var(--text-light);
   padding: 60px 20px 20px;
 }
 
@@ -572,18 +572,18 @@ footer {
 .footer-section h4 {
   margin-bottom: 20px;
   font-size: 1.2em;
-  color: #fff;
+  color: var(--text-light);
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
 .footer-section h4 i {
-  color: #ff9800;
+  color: var(--secondary-orange);
 }
 
 .footer-section p {
-  color: #b0bec5;
+  color: var(--grey-light);
   margin-bottom: 20px;
 }
 
@@ -593,7 +593,7 @@ footer {
 }
 
 .social-icons a {
-  color: #fff;
+  color: var(--text-light);
   background: rgba(255, 255, 255, 0.1);
   width: 36px;
   height: 36px;
@@ -605,7 +605,7 @@ footer {
 }
 
 .social-icons a:hover {
-  background: #ff9800;
+  background: var(--secondary-orange);
   transform: translateY(-3px);
 }
 
@@ -620,7 +620,7 @@ footer {
 
 .footer-section ul li a,
 .footer-section ul li {
-  color: #b0bec5;
+  color: var(--grey-light);
   text-decoration: none;
   transition: all 0.3s;
   display: flex;
@@ -629,7 +629,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-  color: #ff9800;
+  color: var(--secondary-orange);
   transform: translateX(5px);
 }
 
@@ -647,17 +647,17 @@ footer {
 }
 
 .newsletter button {
-  background: #ff9800;
+  background: var(--secondary-orange);
   border: none;
   border-radius: 0 4px 4px 0;
   padding: 10px 15px;
   cursor: pointer;
-  color: #fff;
+  color: var(--text-light);
   transition: all 0.3s;
 }
 
 .newsletter button:hover {
-  background: #fb8c00;
+  background: var(--secondary-orange-dark);
 }
 
 .footer-bottom {
@@ -754,25 +754,54 @@ footer {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
-/* Modal de Login */
+/* Modal Styles */
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items: center;
   justify-content: center;
-  z-index: 2000;
+  align-items: center;
+  z-index: 1000;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.modal.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .modal-content {
-  background: white;
+  background: var(--text-light);
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.modal .close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Modal de Login */
+.modal-content {
+  background: var(--text-light);
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   padding: 30px;
@@ -799,7 +828,7 @@ footer {
   top: 15px;
   right: 15px;
   font-size: 1.2em;
-  color: #78909c;
+  color: var(--grey-light);
   background: none;
   border: none;
   cursor: pointer;
@@ -807,7 +836,7 @@ footer {
 }
 
 .close-modal:hover {
-  color: #ff9800;
+  color: var(--secondary-orange);
   transform: scale(1.2);
 }
 
@@ -817,27 +846,27 @@ footer {
 }
 
 .modal-header h2 {
-  color: #1976d2;
+  color: var(--primary-blue);
   font-size: 1.8em;
   margin-bottom: 5px;
 }
 
 .modal-header p {
-  color: #546e7a;
+  color: var(--grey-dark);
   font-size: 0.9em;
 }
 
 .form-group {
-  margin-bottom: 20px; /* Espaçamento consistente entre os campos */
+  margin-bottom: 20px;
 }
 
 .form-control {
-  width: 100%; /* Garante que os inputs ocupem toda a largura disponível */
-  padding: 12px 15px; /* Padding interno consistente */
-  border: 1px solid #e0e0e0; /* Borda consistente */
-  border-radius: 4px; /* Bordas arredondadas */
-  font-size: 1em; /* Tamanho de fonte consistente */
-  box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
 }
 
 .password-field {
@@ -851,13 +880,13 @@ footer {
   transform: translateY(-50%);
   background: none;
   border: none;
-  color: #78909c;
+  color: var(--grey-light);
   cursor: pointer;
 }
 
 .btn-primary {
-  background: #1976d2;
-  color: white;
+  background: var(--primary-blue);
+  color: var(--text-light);
   border: none;
   padding: 12px;
   border-radius: 4px;
@@ -869,14 +898,14 @@ footer {
 }
 
 .btn-primary:hover {
-  background: #1565c0;
+  background: var(--primary-blue-dark);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+  box-shadow: 0 4px 12px var(--shadow-blue);
 }
 
 .btn-secondary {
-  background: #ff9800;
-  color: white;
+  background: var(--secondary-orange);
+  color: var(--text-light);
   border: none;
   padding: 12px;
   border-radius: 4px;
@@ -892,9 +921,9 @@ footer {
 }
 
 .btn-secondary:hover {
-  background: #fb8c00;
+  background: var(--secondary-orange-dark);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+  box-shadow: 0 4px 12px var(--shadow-orange);
 }
 
 .forgot-password {
@@ -903,16 +932,13 @@ footer {
 }
 
 .forgot-password a {
-  color: #1976d2;
+  color: var(--primary-blue);
   text-decoration: underline;
   font-size: 0.9em;
   transition: all 0.2s;
 }
 
 .forgot-password a:hover {
-  color: #ff9800;
-}
-
-.modal.hidden {
-  display: none !important;
+  color: var(--secondary-orange);
+  transform: translateY(-2px);
 }

@@ -212,29 +212,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Modal de Login
     const loginModal = document.getElementById("loginModal");
-    const openModalBtn = document.getElementById("openModal");
-    const closeModalBtn = document.getElementById("closeModal");
+    const openLoginModalBtn = document.getElementById("openModal");
+    const closeLoginModalBtn = document.getElementById("closeModal");
 
-    // Abrir o modal
-    openModalBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        loginModal.classList.remove("hidden");
-    });
+    if (openLoginModalBtn) {
+        openLoginModalBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            loginModal.classList.remove("hidden");
+        });
+    } else {
+        console.error("Botão de abrir modal de login não encontrado!");
+    }
 
-    // Fechar o modal
-    closeModalBtn.addEventListener("click", () => {
-        loginModal.classList.add("hidden");
-    });
+    if (closeLoginModalBtn) {
+        closeLoginModalBtn.addEventListener("click", () => {
+            loginModal.classList.add("hidden");
+        });
+    } else {
+        console.error("Botão de fechar modal de login não encontrado!");
+    }
 
-    // Fechar o modal ao clicar fora dele
+    // Fechar o modal de login ao clicar fora do conteúdo
     loginModal.addEventListener("click", (e) => {
         if (e.target === loginModal) {
             loginModal.classList.add("hidden");
         }
     });
 
-    // Adicione este código ao final da função DOMContentLoaded
     // Mostrar/esconder senha
     const togglePassword = document.querySelector('.toggle-password');
     const passwordField = document.getElementById('senha');
@@ -250,4 +256,40 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.classList.toggle('fa-eye-slash');
         });
     }
+
+    // Modal de Escolha de Plano
+    const planModal = document.getElementById("planModal");
+    const closePlanModalBtn = document.getElementById("closePlanModal");
+    const planTitle = document.getElementById("planTitle");
+    const planDescription = document.getElementById("planDescription");
+
+    const plans = {
+        Básico: "Plano Básico: Ideal para quem está começando. Inclui 2 aulas por semana e suporte por email.",
+        Premium: "Plano Premium: Nosso plano mais popular! Inclui 5 aulas por semana, aulas em grupo e suporte 24/7.",
+        Business: "Plano Business: Perfeito para empresas. Aulas ilimitadas, conteúdo personalizado e suporte VIP."
+    };
+
+    document.querySelectorAll(".price-btn").forEach((button) => {
+        button.addEventListener("click", (event) => {
+            const planName = event.target.closest(".price-card").querySelector("h3").textContent;
+            planTitle.textContent = planName;
+            planDescription.textContent = plans[planName] || "Descrição não disponível.";
+            planModal.classList.remove("hidden");
+        });
+    });
+
+    if (closePlanModalBtn) {
+        closePlanModalBtn.addEventListener("click", () => {
+            planModal.classList.add("hidden");
+        });
+    } else {
+        console.error("Botão de fechar modal de plano não encontrado!");
+    }
+
+    // Fechar o modal de plano ao clicar fora do conteúdo
+    planModal.addEventListener("click", (e) => {
+        if (e.target === planModal) {
+            planModal.classList.add("hidden");
+        }
+    });
 });

@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LinguaConecta - Aprenda um Novo Idioma</title>
+  <title>TalkBird - Aprenda um Novo Idioma</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
   <header class="topbar">
-    <div class="logo"><i class="fas fa-comment-dots"></i> LinguaConecta</div>
+    <div class="logo"><i class="fas fa-comment-dots"></i> TalkBird</div>
     <nav class="menu">
       <a href="#"><i class="fas fa-user"></i> Para Indivíduos</a>
       <a href="#"><i class="fas fa-building"></i> Para Empresas</a>
@@ -46,7 +46,7 @@
   </section>
 
   <section class="features">
-    <h2>Por que escolher o LinguaConecta?</h2>
+    <h2>Por que escolher o TalkBird?</h2>
     <div class="feature-cards">
       <div class="feature-card">
         <i class="fas fa-users"></i>
@@ -178,7 +178,7 @@
   <footer>
     <div class="footer-content">
       <div class="footer-section">
-        <h4><i class="fas fa-comment-dots"></i> LinguaConecta</h4>
+        <h4><i class="fas fa-comment-dots"></i> TalkBird</h4>
         <p>Conectando pessoas através do aprendizado de idiomas desde 1994.</p>
         <div class="social-icons">
           <a href="#"><i class="fab fa-facebook"></i></a>
@@ -200,7 +200,7 @@
         <h4>Contato</h4>
         <ul>
           <li><i class="fas fa-phone"></i> (11) 5555-9999</li>
-          <li><i class="fas fa-envelope"></i> contato@linguaconecta.com</li>
+          <li><i class="fas fa-envelope"></i> contato@TalkBird.com</li>
           <li><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</li>
         </ul>
       </div>
@@ -214,7 +214,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>Copyright &copy; 2025 LinguaConecta. Todos os direitos reservados.</p>
+      <p>Copyright &copy; 2025 TalkBird. Todos os direitos reservados.</p>
     </div>
   </footer>
 
@@ -251,6 +251,20 @@
           <a href="#">Primeiro acesso / Esqueci minha senha</a>
         </div>
       </form>
+    </div>
+  </div>
+
+  <!-- Modal de Plano -->
+  <div id="planModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closePlanModal" class="close-modal"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <h2 id="planTitle">Título do Plano</h2>
+      </div>
+      <div class="modal-body">
+        <p id="planDescription">Descrição do plano selecionado.</p>
+      </div>
+      <button class="btn-primary">Confirmar Escolha</button>
     </div>
   </div>
 
