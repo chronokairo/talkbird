@@ -246,7 +246,7 @@ nav a:hover {
 }
 
 .features h2 {
-  color: var(--primary-blue);
+  color: #FF8C00;
   margin-bottom: 30px;
   font-size: 2em;
 }
@@ -276,12 +276,12 @@ nav a:hover {
 
 .feature-card i {
   font-size: 2.5em;
-  color: var(--primary-blue);
+  color: #FF8C00; /* Alterado para a cor desejada */
   margin-bottom: 20px;
 }
 
 .feature-card h3 {
-  color: var(--text-dark);
+  color: #191970, /* Alterado para a cor desejada */
   margin-bottom: 15px;
 }
 
@@ -734,7 +734,9 @@ footer {
     margin-top: 24px;
   }
 
-  .feature-cards,
+  .feature-cards{
+    color:  #191970
+  }
   .testimonial-cards,
   .price-cards {
     flex-direction: column;
