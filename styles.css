@@ -246,7 +246,7 @@ nav a:hover {
 }
 
 .features h2 {
-  color: var(--primary-blue);
+  color: #FF8C00;
   margin-bottom: 30px;
   font-size: 2em;
 }
@@ -260,7 +260,7 @@ nav a:hover {
 }
 
 .feature-card {
-  background: #f5f7fa;
+  background: #191970; /* Alterado para a cor desejada */
   border-radius: 8px;
   padding: 30px;
   width: 280px;
@@ -276,13 +276,17 @@ nav a:hover {
 
 .feature-card i {
   font-size: 2.5em;
-  color: var(--primary-blue);
+  color: #FF8C00; /* Alterado para a cor desejada */
   margin-bottom: 20px;
 }
 
 .feature-card h3 {
-  color: var(--text-dark);
+  color: #FFFAFA; /* Alterado para a cor desejada */
   margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: #FFFAFA; /* Alterado para a cor desejada */
 }
 
 /* Cards de idiomas */
@@ -547,7 +551,7 @@ nav a:hover {
 .chat h3 {
   margin-bottom: 15px;
   font-size: 2em;
-  color: var(--primary-blue);
+  color: #FFFAFA;
 }
 
 .chat p {
@@ -555,6 +559,7 @@ nav a:hover {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  color: #FFFAFA
 }
 
 .chat button {
@@ -733,7 +738,9 @@ footer {
     margin-top: 24px;
   }
 
-  .feature-cards,
+  .feature-cards{
+    color:  #191970
+  }
   .testimonial-cards,
   .price-cards {
     flex-direction: column;
