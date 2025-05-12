@@ -91,6 +91,13 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
+.menu a.active,
+nav a.active {
+  color: #FF8C00;
+  font-weight: bold;
+  border-bottom: 2px solid #FF8C00;
+}
+
 /* Ações do usuário */
 .user-actions {
   display: flex;
