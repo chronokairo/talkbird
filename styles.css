@@ -351,7 +351,7 @@ nav a:hover {
 }
 
 .card h3 {
-  color: var(--primary-blue);
+  color: #191970;
   margin-bottom: 10px;
 }
 
@@ -370,7 +370,7 @@ nav a:hover {
   background: var(--secondary-orange-dark);
 }
 
-/* Testimonials */
+/* Testemunhas */
 .testimonials {
   padding: 60px 20px;
   background: var(--text-light);
@@ -378,7 +378,7 @@ nav a:hover {
 }
 
 .testimonials h2 {
-  color: var(--primary-blue);
+  color: #FF8C00;
   margin-bottom: 40px;
   font-size: 2em;
 }
@@ -405,7 +405,7 @@ nav a:hover {
   top: 20px;
   left: 20px;
   font-size: 1.5em;
-  color: #bbdefb;
+  color: #191970;
 }
 
 .testimonial p {
@@ -429,7 +429,7 @@ nav a:hover {
 
 .author h4 {
   margin: 0;
-  color: var(--primary-blue);
+  color: #FF8C00;
 }
 
 .author span {
@@ -445,7 +445,7 @@ nav a:hover {
 }
 
 .pricing h2 {
-  color: #FF8C00;
+  color: #FFFAFA;
   margin-bottom: 40px;
   font-size: 2em;
 }
