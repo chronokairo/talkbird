@@ -850,7 +850,7 @@ footer {
 
 /* Modal de Login */
 .modal-content {
-  background: var(--text-light);
+  background: #191970;
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   padding: 30px;
@@ -895,13 +895,13 @@ footer {
 }
 
 .modal-header h2 {
-  color: var(--primary-blue);
+  color: #FFFAFA;
   font-size: 1.8em;
   margin-bottom: 5px;
 }
 
 .modal-header p {
-  color: var(--grey-dark);
+  color: #FFFAFA;
   font-size: 0.9em;
 }
 
@@ -981,14 +981,14 @@ footer {
 }
 
 .forgot-password a {
-  color: var(--primary-blue);
+  color: #FF8C00; /* Define a nova cor */
   text-decoration: underline;
   font-size: 0.9em;
   transition: all 0.2s;
 }
 
 .forgot-password a:hover {
-  color: var(--secondary-orange);
+  color: var(--secondary-orange); /* Mantém a cor de hover existente */
   transform: translateY(-2px);
 }
 
@@ -1001,4 +1001,13 @@ footer {
   object-fit: cover;
   z-index: -1;
   filter: brightness(0.7); /* Ajuste o brilho, se necessário */
+}
+
+label {
+  color: #FFFAFA; /* Cor dos rótulos */
+}
+
+.form-control::placeholder {
+  color: #b0bec5; /* Define a cor cinza para os placeholders */
+  opacity: 1; /* Garante que a cor seja visível */
 }
