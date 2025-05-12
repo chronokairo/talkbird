@@ -159,15 +159,17 @@ nav a:hover {
 }
 
 .hero-text {
-  flex: 1 1 320px;
-  max-width: 500px;
-  margin-right: 32px;
-  position: relative;
+  flex: 1 1 auto; /* Permite que o contêiner cresça conforme necessário */
+  max-width: none; /* Remove o limite de largura */
+  text-align: center; /* Centraliza o texto dentro do contêiner */
 }
 
 .hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 16px;
+  font-size: 1.8em; /* Ajuste conforme necessário */
+  white-space: normal; /* Permite que o texto quebre em várias linhas */
+  overflow: visible; /* Garante que o texto não seja cortado */
+  text-overflow: unset; /* Remove as reticências */
+  margin: 0 auto; /* Centraliza o texto horizontalmente */
 }
 
 .hero p {
@@ -198,7 +200,8 @@ nav a:hover {
   margin-top: 28px;
   display: flex;
   gap: 12px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Impede que os botões quebrem para a próxima linha */
+  justify-content: center; /* Centraliza os botões */
 }
 
 .start-btn,
