@@ -62,6 +62,11 @@ header,
   color: var(--secondary-orange);
 }
 
+.logo img {
+  max-height: 160px; /* Aumente para o dobro do tamanho atual */
+  width: auto; /* Mantém a proporção da imagem */
+}
+
 /* Menu de navegação */
 .menu a,
 nav a {
