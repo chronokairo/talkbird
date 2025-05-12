@@ -24,12 +24,12 @@
   </header>
 
   <section class="hero" style="min-height: 60vh; position: relative; overflow: hidden;">
-    <video autoplay muted loop class="video-bg">
-      <source src="https://videos.pexels.com/video-files/4495519/4495519-uhd_2560_1440_25fps.mp4" type="video/mp4">
+   <video autoplay muted loop class="video-bg">
+      <source src="assets/videos/escola.mp4" type="video/mp4">
       Seu navegador não suporta vídeos.
     </video>
-    <div class="hero-text" style="position:relative;z-index:1;">
-      <h1 style="color:#FF8C00;">TalkBird para Escolas</h1>
+   <div class="hero-text" style="position:relative;z-index:1;">
+      <h1 style="color:#FFFAFA;">TalkBird para Escolas</h1>
       <p style="max-width:600px;margin:0 auto;">
         Inove o ensino de idiomas em sua instituição! O TalkBird oferece uma plataforma completa para potencializar o aprendizado dos seus alunos, com recursos interativos, professores nativos e acompanhamento personalizado.
       </p>
@@ -131,5 +131,57 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modal de Login -->
+  <div id="loginModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeLoginModal" class="close-modal"><i class="fas fa-times"></i></button>
+
+      <div class="modal-header">
+        <h2>Já estuda com a gente?</h2>
+        <p>Faça seu login e boa aula!</p>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" class="form-control" placeholder="Seu e-mail" required>
+        </div>
+
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <div class="password-field">
+            <input type="password" id="senha" class="form-control" placeholder="Sua senha" required>
+            <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary">ENTRAR</button>
+        <button type="button" class="btn-secondary">
+          <i class="fab fa-google"></i> ENTRAR COM GOOGLE
+        </button>
+
+        <div class="forgot-password">
+          <a href="#">Primeiro acesso / Esqueci minha senha</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal de Plano -->
+  <div id="planModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closePlanModal" class="close-modal"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <h2 id="planTitle">Título do Plano</h2>
+      </div>
+      <div class="modal-body">
+        <p id="planDescription">Descrição do plano selecionado.</p>
+      </div>
+      <button class="btn-primary">Confirmar Escolha</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
