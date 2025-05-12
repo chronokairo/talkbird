@@ -213,7 +213,7 @@ nav a:hover {
 .enter-btn,
 .card-btn,
 .price-btn {
-  background: var(--background-blue);
+  background:  #FF8C00; /*cor de fundo do botão da aba empresas*/
   color: var(--text-light);
   border: none;
   border-radius: 4px;
