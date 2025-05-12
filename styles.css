@@ -624,6 +624,11 @@ footer {
   color: var(--secondary-orange);
 }
 
+.footer-section h4 img {
+  max-height: 120px !important; /* Força a aplicação do tamanho */
+  width: auto; /* Mantém a proporção da imagem */
+}
+
 .footer-section p {
   color: var(--grey-light);
   margin-bottom: 20px;
