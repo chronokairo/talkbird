@@ -302,3 +302,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const openModalBtn = document.getElementById('openModal');
+  const closeModalBtn = document.getElementById('closeModal');
+  const loginModal = document.getElementById('loginModal');
+
+  if (openModalBtn && closeModalBtn && loginModal) {
+    openModalBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      loginModal.classList.remove('hidden');
+    });
+
+    closeModalBtn.addEventListener('click', function () {
+      loginModal.classList.add('hidden');
+    });
+
+    // Fecha o modal ao clicar fora do conteúdo
+    loginModal.addEventListener('click', function (e) {
+      if (e.target === loginModal) {
+        loginModal.classList.add('hidden');
+      }
+    });
+  }
+});
