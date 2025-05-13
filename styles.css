@@ -1018,3 +1018,126 @@ label {
   color: #b0bec5; /* Define a cor cinza para os placeholders */
   opacity: 1; /* Garante que a cor seja visível */
 }
+
+/*RESPONSIVIDADE DE SITE/*
+
+/* Responsividade para TalkBird */
+
+/* Layout base já existente... */
+
+/* Responsividade geral */
+@media (max-width: 1024px) {
+  .feature-cards, .cards-container, .price-cards, .testimonial-cards, .footer-content {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .feature-card, .card, .price-card, .testimonial {
+    flex: 1 1 300px;
+    min-width: 260px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar, .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  .user-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .hero-text {
+    padding: 24px 8px;
+    text-align: center;
+  }
+  .feature-cards, .cards-container, .price-cards, .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .feature-card, .card, .price-card, .testimonial {
+    width: 90%;
+    min-width: unset;
+  }
+  .footer-section {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    padding: 8px 4px;
+  }
+  .logo img {
+    max-width: 120px;
+    height: auto;
+  }
+  .hero-text h1 {
+    font-size: 1.4rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .cta, .user-actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .feature-card, .card, .price-card, .testimonial {
+    width: 100%;
+    padding: 12px;
+  }
+  .footer-content {
+    padding: 16px 4px;
+  }
+  .newsletter input[type="email"] {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+/* Garante que o vídeo de fundo cubra toda a área do hero */
+.video-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.7);
+}
+
+/* Ajuste para o modal em telas pequenas */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95vw !important;
+    min-width: unset !important;
+    padding: 16px !important;
+  }
+}
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.8em;
+  }
+  .hero p {
+    font-size: 1em;
+  }
+  .hero {
+    padding: 30px 10px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.4rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
