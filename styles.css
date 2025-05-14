@@ -468,8 +468,28 @@ nav a.active {
 .price-cards {
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
   justify-content: center;
-  gap: 30px;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-card ul {
+  flex: 1 1 auto;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.price-btn {
+  margin-top: auto;
+  width: 100%;
+  max-width: 180px;
+  align-self: center;
+  display: block;
 }
 
 .price-card {
