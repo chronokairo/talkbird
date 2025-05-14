@@ -327,8 +327,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+// Modal de contato para os botões específicos
 document.addEventListener('DOMContentLoaded', function () {
-  // Seleciona os botões pelo texto
   const contactBtns = Array.from(document.querySelectorAll('button.start-btn')).filter(btn =>
     btn.textContent.includes('Solicitar Demonstração') ||
     btn.textContent.includes('Fale com nosso time') ||
@@ -340,7 +340,7 @@ document.addEventListener('DOMContentLoaded', function () {
   contactBtns.forEach(btn => {
     btn.addEventListener('click', function (e) {
       e.preventDefault();
-      contactModal.classList.remove('hidden');
+      if (contactModal) contactModal.classList.remove('hidden');
     });
   });
 
