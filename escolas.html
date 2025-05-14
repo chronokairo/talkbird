@@ -131,10 +131,8 @@
       </div>
     </div>
   </footer>
-  </body>
-</html>
 
- <!-- Modal de Login -->
+  <!-- Modal de Login -->
   <div id="loginModal" class="modal hidden">
     <div class="modal-content">
       <button id="closeModal" class="close-modal"><i class="fas fa-times"></i></button>
@@ -184,5 +182,32 @@
     </div>
   </div>
 
+  <!-- Modal de Contato -->
+  <div id="contactModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeContactModal" class="close-modal"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <h2>Fale com nossa equipe</h2>
+        <p>Preencha o formulário e entraremos em contato rapidamente!</p>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="contato-nome">Nome</label>
+          <input type="text" id="contato-nome" class="form-control" placeholder="Seu nome" required>
+        </div>
+        <div class="form-group">
+          <label for="contato-email">E-mail</label>
+          <input type="email" id="contato-email" class="form-control" placeholder="Seu e-mail" required>
+        </div>
+        <div class="form-group">
+          <label for="contato-msg">Mensagem</label>
+          <textarea id="contato-msg" class="form-control" placeholder="Como podemos ajudar?" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
+</html>

@@ -326,3 +326,33 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Seleciona os botões pelo texto
+  const contactBtns = Array.from(document.querySelectorAll('button.start-btn')).filter(btn =>
+    btn.textContent.includes('Solicitar Demonstração') ||
+    btn.textContent.includes('Fale com nosso time') ||
+    btn.textContent.includes('Quero saber mais')
+  );
+  const contactModal = document.getElementById('contactModal');
+  const closeContactModal = document.getElementById('closeContactModal');
+
+  contactBtns.forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      contactModal.classList.remove('hidden');
+    });
+  });
+
+  if (closeContactModal && contactModal) {
+    closeContactModal.addEventListener('click', function () {
+      contactModal.classList.add('hidden');
+    });
+    contactModal.addEventListener('click', function (e) {
+      if (e.target === contactModal) {
+        contactModal.classList.add('hidden');
+      }
+    });
+  }
+});
+
